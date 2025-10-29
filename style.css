@@ -3,3 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a:hover {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: whitesmoke;
+  padding: 8px 20px;
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  transition: .5s;
+}
+
+.nav-links {
+  display: flex;  
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links li a:hover {
+  transform: scale(1.2);
+}
+
+.nav-links li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-links li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
