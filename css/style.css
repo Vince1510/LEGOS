@@ -8,10 +8,16 @@
   scroll-behavior: smooth;
 }
 
-.brick-bg {
+.brick-bg{
   background-image: url('../images/Lego-Background.webp');
   background-size: cover;
-  padding: 56px 0
+  backdrop-filter: blur(10px);
+  /* filter: blur(20px); */
+  z-index: -1;
+}
+
+.container {
+  backdrop-filter: blur(10px);
 }
 
 a:hover {
@@ -173,7 +179,9 @@ header .container {
 /* ------------------------------------- */
 
 .section {
-  padding: 64px 0
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
 }
 
 .section-title {
@@ -181,12 +189,6 @@ header .container {
   font-size: 26px;
   margin-bottom: 28px;
   font-weight: 800
-}
-
-.brick-bg {
-  background-image: url('./images/Lego-Background.webp');
-  background-size:cover;
-  padding: 56px 0
 }
 
 .two-col {
