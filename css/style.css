@@ -7,6 +7,12 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.brick-bg {
+  background-image: url('../images/Lego-Background.webp');
+  background-size:cover;
+  padding: 56px 0
+}
+
 a:hover {
   cursor: pointer;
   background-color: lightgray;
@@ -108,10 +114,11 @@ header nav a {
   display: flex;
   flex-direction: row;
   gap: 36px;
-  align-items: center
+  /* align-items: center */
 }
 
 .hero h1 {
+  font-family: 'Bowlby One SC';
   font-size: 48px;
   letter-spacing: 6px;
   margin-bottom: 12px;
@@ -124,7 +131,7 @@ header nav a {
 }
 
 .hero-media img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08)
@@ -141,12 +148,6 @@ header nav a {
   font-weight: 800
 }
 
-.brick-bg {
-  background-image: url('../images/Lego-Background.webp');
-  background-size:cover;
-  padding: 56px 0
-}
-
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -158,11 +159,26 @@ header nav a {
   grid-auto-flow: dense
 }
 
-.col .image-col img {
+.col {
   width: 100%;
   height: auto;
   border-radius: 6px;
   display: block
+}
+
+.image-goal img {
+  height: 250px;
+  width: 300px;
+}
+
+.image-innovatie img {
+  height: 250px;
+  width: 300px;
+}
+
+.image-product img {
+  height: 250px;
+  width: 300px;
 }
 
 .card {
