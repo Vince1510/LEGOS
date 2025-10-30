@@ -5,19 +5,106 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.brick-bg {
+  background-image: url('../images/Lego-Background.webp');
+  background-size: cover;
+  padding: 56px 0
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* ------------------------------------- */
+/* Nav */
+/* ------------------------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: white;
+  padding: 8px 20px;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  list-style: none;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+  width: 15%;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 18px;
+  list-style: none
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  transition: .5s;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  display: inline-block;
+  position: relative;
+}
+
+nav li a:hover {
+  transform: scale(1.2);
+}
+
+nav li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* ------------------------------------- */
+/* Header */
+/* ------------------------------------- */
+
+
+header {
+  /* background: #fafafa;
+  padding: 18px 0;
+  border-bottom: 1px solid #e9e9e9; */
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-
-header {
-  background: #fafafa;
-  padding: 18px 0;
-  border-bottom: 1px solid #e9e9e9;
 }
 
 header .container {
@@ -27,21 +114,26 @@ header .container {
   gap: 20px
 }
 
+.button {
+  border: none;
+  background-color: #0099FF;
+  color: white;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #007ACC;
+}
+
 .logo img {
   height: 40px;
   display: block
-}
-
-header nav ul {
-  display: flex;
-  gap: 18px;
-  list-style: none
-}
-
-header nav a {
-  color: #111;
-  text-decoration: none;
-  font-weight: 600
 }
 
 .hero {
@@ -52,14 +144,16 @@ header nav a {
   display: flex;
   flex-direction: row;
   gap: 36px;
-  align-items: center
 }
 
 .hero h1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-family: 'Bowlby One SC';
   font-size: 48px;
   letter-spacing: 6px;
   margin-bottom: 12px;
-  color: #333;
+  color: white;
 }
 
 .hero p {
@@ -68,11 +162,15 @@ header nav a {
 }
 
 .hero-media img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08)
 }
+
+/* ------------------------------------- */
+/* Main */
+/* ------------------------------------- */
 
 .section {
   padding: 64px 0
@@ -102,278 +200,26 @@ header nav a {
   grid-auto-flow: dense
 }
 
-.col .image-col img {
+.col {
   width: 100%;
   height: auto;
   border-radius: 6px;
   display: block
 }
 
-.card {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04)
+.image-goal img {
+  height: 250px;
+  width: 300px;
 }
 
-.feature-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 18px
+.image-innovatie img {
+  height: 250px;
+  width: 300px;
 }
 
-.feature {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: flex-start;
-  padding: 18px;
-  background: #fff;
-  border-radius: 8px;
-  border: 1px solid #f0f0f0
-}
-
-.feature img {
-  width: 120px;
-  height: auto;
-  border-radius: 6px
-}
-
-footer {
-  background: #f5f5f5;
-  padding: 36px 0;
-  margin-top: 40px
-}
-
-footer .container {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  justify-content: space-between
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 12px
-}
-
-footer a {
-  color: #666;
-  text-decoration: none
-}
-
-.brand-small {
-  font-weight: 800
-}
-
-.small {
-  color: #666;
-  font-size: 14px
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0
-}
-
-
-@media (max-width:900px) {
-  .hero .container {
-    grid-template-columns: 1fr;
-  }
-
-  .two-col {
-    grid-template-columns: 1fr
-  }
-
-  .feature-cards {
-    grid-template-columns: 1fr
-  }
-
-  header .container {
-    flex-direction: column;
-    align-items: flex-start
-  }
-
-  header nav ul {
-    flex-wrap: wrap
-  }
-}
-@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=UnifrakturMaguntia&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
-  background: whitesmoke;
-  padding: 8px 20px;
-}
-
-nav a {
-  display: flex;
-  text-decoration: none;
-  color: inherit;
-  transition: .5s;
-}
-
-.nav-links {
-  display: flex;  
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  list-style: none;
-}
-
-.nav-links li a {
-  display: inline-block;
-  position: relative;
-}
-
-.nav-links li a:hover {
-  transform: scale(1.2);
-}
-
-.nav-links li a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: black;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-.nav-links li a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-header {
-  background: #fafafa;
-  padding: 18px 0;
-  border-bottom: 1px solid #e9e9e9;
-}
-
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px
-}
-
-.logo img {
-  height: 40px;
-  display: block
-}
-
-header nav ul {
-  display: flex;
-  gap: 18px;
-  list-style: none
-}
-
-header nav a {
-  color: #111;
-  text-decoration: none;
-  font-weight: 600
-}
-
-.hero {
-  padding: 56px 0
-}
-
-.hero .container {
-  display: flex;
-  flex-direction: row;
-  gap: 36px;
-  align-items: center
-}
-
-.hero h1 {
-  font-size: 48px;
-  letter-spacing: 6px;
-  margin-bottom: 12px;
-  color: #333;
-}
-
-.hero p {
-  color: #666;
-  line-height: 1.6
-}
-
-.hero-media img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08)
-}
-
-.section {
-  padding: 64px 0
-}
-
-.section-title {
-  text-align: center;
-  font-size: 26px;
-  margin-bottom: 28px;
-  font-weight: 800
-}
-
-.brick-bg {
-  background-image: url('/images/Lego-Background.webp');
-  background-size:cover;
-  padding: 56px 0
-}
-
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  align-items: center
-}
-
-.two-col .reverse {
-  grid-auto-flow: dense
-}
-
-.col .image-col img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  display: block
+.image-product img {
+  height: 250px;
+  width: 300px;
 }
 
 .card {
@@ -419,8 +265,11 @@ header nav a {
   border: 0
 }
 
+/* ------------------------------------- */
+/* Mobile */
+/* ------------------------------------- */
 
-@media (max-width:900px) {
+@media (width <= 900px) {
   .hero .container {
     grid-template-columns: 1fr;
   }
@@ -442,4 +291,3 @@ header nav a {
     flex-wrap: wrap
   }
 }
-

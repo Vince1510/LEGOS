@@ -4,31 +4,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LEGOS</title>
+
+  <!-- LINKS -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/brick.css" />
   <link rel="stylesheet" href="./css/footer.css" />
+
+  <!-- SCRIPTS -->
+   <script src="./js/script.js" defer></script>
+
+  <title>LEGOS</title>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <a class="logo" href="#">
-        <img src="./images/banner.svg" alt="LEGOS logo" />
-      </a>
-      <!-- nav -->
-      <nav>
+      <nav id="navbar">
+
+        <img src="./images/banner_sans.svg" alt="LEGOS logo" class="logo" onclick="scrollToTop()"/>
+
         <ul>
-          <li><a href="#goal">Goal</a></li>
+          <li><a href="#goal">Ons doel</a></li>
           <li><a href="#innovatie">Innovatie</a></li>
           <li><a href="#product">Product</a></li>
           <li><a href="#function">Functionaliteit</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        
       </nav>
-    </div>
+
+  <!-- Header -->
+  <header id="hero" class="hero">
+    
+    <div class="container hero-inner">
+        <div>
+          <h1>L.E.G.O.S.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="hero-media">
+          <img src="" alt="hero placeholder" />
+        </div>
+      </div>
+
   </header>
 
   <!-- Lego Loader -->
@@ -74,29 +90,15 @@
 
   <!-- Main-->
   <main>
-    <!-- section 1 -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <h1>L.E.G.O.S.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="hero-media">
-          <img src="" alt="hero placeholder" />
-        </div>
-      </div>
-    </section>
-
-      <!-- section 2 -->
-    <section id="goal" class="brick-bg">
+      <!-- section 2: Ons doel -->
+    <section class="brick-bg">
       <div class="container">
         <h2 class="section-title">Goal</h2>
         <div class="two-col">
-          <figure class="col image-col">
-            <img src="" alt="goal placeholder" />
-            <figcaption class="sr-only">Goal image</figcaption>
-          </figure>
-          <article class="col text-col card">
+          <div class="col image-goal">
+            <img src="./images/goals.png" alt="goal placeholder" />
+          </div>
+          <article class="col card">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </article>
         </div>
@@ -108,12 +110,12 @@
       <div id="innovatie" class="container">
         <h2 class="section-title">Innovatie</h2>
         <div class="two-col reverse">
-          <article class="col text-col card">
+          <article class="col card">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </article>
-          <figure class="col image-col">
-            <img src="" alt="innovatie placeholder" />
-          </figure>
+          <div class="col image-innovatie">
+            <img src="./images/innovatie.png" alt="innovatie placeholder" />
+          </div>
         </div>
       </div>
     </section>
@@ -123,9 +125,9 @@
       <div class="container">
         <h2 class="section-title">Product</h2>
         <div class="two-col">
-          <figure class="col image-col">
-            <img src="" alt="product placeholder" />
-          </figure>
+          <div class="col image-product">
+            <img src="./images/product.png" alt="product placeholder" />
+          </div>
           <article class="col text-col card">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </article>
@@ -137,7 +139,7 @@
     <section>
       <div id="functionaliteit" class="container">
         <h3>Functionaliteit</h3>
-        <p>Subheading</p>
+
 
         <div class="feature-cards">
           <div class="card feature">
