@@ -33,8 +33,3 @@ function addFunctionalities(targetElement) {
     // 4. Append the parent container (with all its cards) to the target element on the page.
     targetElement.appendChild(containerDiv);
 }
-
-function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
