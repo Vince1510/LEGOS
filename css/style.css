@@ -29,6 +29,11 @@ nav {
   list-style: none;
 }
 
+nav img {
+  width: 20%;
+  cursor: pointer;
+}
+
 nav ul {
   display: flex;
   gap: 18px;
@@ -64,7 +69,7 @@ nav li a:after {
   width: 0;
 }
 
-.nav-links li a:hover:after { 
+nav li a:hover:after { 
   width: 100%; 
   left: 0; 
 }
