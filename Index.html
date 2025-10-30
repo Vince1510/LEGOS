@@ -1,47 +1,204 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LEGOS</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#"><img src="./images/banner.svg" alt="LEGOS Banner image" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEGOS</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/brick.css" />
+</head>
 
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Ons doel</a></li>
-      <li><a href="#">Innovatie</a></li>
-      <li><a href="#">Product</a></li>
-      <li><a href="#">Functionaliteit</a></li>
-    </ul>
-  </nav>
+<body>
 
   <!-- Header -->
-  <header></header>
+  <header>
+    <div class="container">
+      <a class="logo" href="#">
+        <img src="./images/banner.svg" alt="LEGOS logo" />
+      </a>
+      <!-- nav -->
+      <nav>
+        <ul>
+          <li><a href="#goal">Goal</a></li>
+          <li><a href="#innovatie">Innovatie</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#function">Functionaliteit</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Main -->
+  <!-- Lego Loader -->
+  <!-- Bricks  -->
+  <!-- <div class="lego red">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="container-top">
+      <div class="top">
+        <div class="dot d-n1"></div>
+        <div class="dot d-n2"></div>
+        <div class="dot d-n3"></div>
+        <div class="dot d-n4"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lego green">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="container-top">
+      <div class="top">
+        <div class="dot d-n1"></div>
+        <div class="dot d-n2"></div>
+        <div class="dot d-n3"></div>
+        <div class="dot d-n4"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lego blue">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="container-top">
+      <div class="top">
+        <div class="dot d-n1"></div>
+        <div class="dot d-n2"></div>
+        <div class="dot d-n3"></div>
+        <div class="dot d-n4"></div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Main-->
   <main>
-    <!-- Section 1 -->
-    <section></section>
+    <!-- section 1 -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>L.E.G.O.S.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="hero-media">
+          <img src="" alt="hero placeholder" />
+        </div>
+      </div>
+    </section>
 
-    <!-- Section 2 -->
-    <section></section>
+      <!-- section 2 -->
+    <section id="goal" class="brick-bg">
+      <div class="container">
+        <h2 class="section-title">Goal</h2>
+        <div class="two-col">
+          <figure class="col image-col">
+            <img src="" alt="goal placeholder" />
+            <figcaption class="sr-only">Goal image</figcaption>
+          </figure>
+          <article class="col text-col card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!-- Section 3 -->
-    <section></section>
+  <!-- section 3 -->
+    <section>
+      <div id="innovatie" class="container">
+        <h2 class="section-title">Innovatie</h2>
+        <div class="two-col reverse">
+          <article class="col text-col card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </article>
+          <figure class="col image-col">
+            <img src="" alt="innovatie placeholder" />
+          </figure>
+        </div>
+      </div>
+    </section>
 
-    <!-- Section 4 -->
-    <section></section>
+      <!-- section 4 -->
+    <section id="product" class="brick-bg">
+      <div class="container">
+        <h2 class="section-title">Product</h2>
+        <div class="two-col">
+          <figure class="col image-col">
+            <img src="" alt="product placeholder" />
+          </figure>
+          <article class="col text-col card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+      <!-- section 5-->
+    <section>
+      <div id="functionaliteit" class="container">
+        <h3>Functionaliteit</h3>
+        <p>Subheading</p>
+
+        <div class="feature-cards">
+          <div class="card feature">
+            <img src="" alt="" />
+            <h4>Stap 1</h4>
+            <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very short story.</p>
+          </div>
+
+          <div class="card feature">
+            <img src="" alt="" />
+            <h4>Stap 2</h4>
+            <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very short story.</p>
+          </div>
+
+          <div class="card feature">
+            <img src="" alt="" />
+            <h4>Stap 3</h4>
+            <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very short story.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- footer -->
-  <footer></footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div id="socials-copyright">
+        <div id="socials">
+          <a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a>
+          <a href="#"><img src="./images/youtube.svg" alt="youtube"></a>
+        </div>
+        <p>&copy;2025 L.E.G.O.S alle rechten voorbehouden.</p>
+      </div>
+      <div id="links-logo">
+      <div>
+        <h3>Secties</h3>
+        <ul>
+          <li><a href="#goal">Goal</a></li>
+          <li><a href="#innovatie">Innovatie</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#functionaliteit">Functionaliteit</a></li>
+        </ul>
+      </div>
+      <div>
+          <h3>Contact</h3>
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+      <div>
+        <img src="./images/favicon.svg" alt="LEGOS logo" height="150" width="150" />
+      </div>
+      </div>
+    </div>
+  </footer>
 
-  <body>
-    <script src="./js/script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>
