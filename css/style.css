@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=UnifrakturMaguntia&display=swap');
 
+
+:root {
+  --box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +45,7 @@ nav {
   text-align: center;
   gap: 20px;
   list-style: none;
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
 }
 
 nav img {
@@ -171,7 +176,7 @@ header .container {
   width: 80%;
   height: auto;
   border-radius: 6px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08)
+  box-shadow: var(--box-shadow);
 }
 
 /* ------------------------------------- */
@@ -228,7 +233,7 @@ header .container {
   background: #ffffff;
   padding: 20px;
   border-radius: 6px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04)
+  box-shadow:var(--box-shadow);
 }
 
 .feature-cards {
@@ -246,7 +251,12 @@ header .container {
   padding: 18px;
   background: #fff;
   border-radius: 8px;
-  border: 1px solid #f0f0f0
+  /* border: 1px solid #f0f0f0 */
+  transition: .2s;
+}
+
+.feature:hover {
+  transform: scale(1.01);
 }
 
 .feature img {
