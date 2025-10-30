@@ -9,7 +9,7 @@
 
 .brick-bg {
   background-image: url('../images/Lego-Background.webp');
-  background-size:cover;
+  background-size: cover;
   padding: 56px 0
 }
 
@@ -34,7 +34,7 @@ nav a {
 }
 
 .nav-links {
-  display: flex;  
+  display: flex;
   align-items: center;
   text-align: center;
   gap: 20px;
@@ -50,7 +50,7 @@ nav a {
   transform: scale(1.2);
 }
 
-.nav-links li a:after {    
+.nav-links li a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -63,9 +63,9 @@ nav a {
   width: 0;
 }
 
-.nav-links li a:hover:after { 
-  width: 100%; 
-  left: 0; 
+.nav-links li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 
@@ -74,7 +74,6 @@ nav a {
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 header {
   background: #fafafa;
@@ -87,6 +86,23 @@ header .container {
   align-items: center;
   justify-content: space-between;
   gap: 20px
+}
+
+.button {
+  border: none;
+  background-color: #0099FF;
+  color: white;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #007ACC;
 }
 
 .logo img {
@@ -114,15 +130,16 @@ header nav a {
   display: flex;
   flex-direction: row;
   gap: 36px;
-  /* align-items: center */
 }
 
 .hero h1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   font-family: 'Bowlby One SC';
   font-size: 48px;
   letter-spacing: 6px;
   margin-bottom: 12px;
-  color: #333;
+  color: white;
 }
 
 .hero p {
@@ -222,7 +239,7 @@ footer .container {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 footer ul {
@@ -236,15 +253,6 @@ footer ul {
 footer a {
   color: #666;
   text-decoration: none
-}
-
-.brand-small {
-  font-weight: 800
-}
-
-.small {
-  color: #666;
-  font-size: 14px
 }
 
 .sr-only {
@@ -282,4 +290,3 @@ footer a {
     flex-wrap: wrap
   }
 }
-
