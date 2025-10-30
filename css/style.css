@@ -8,16 +8,22 @@
   scroll-behavior: smooth;
 }
 
-.brick-bg{
-  background-image: url('../images/Lego-Background.webp');
-  background-size: cover;
-  backdrop-filter: blur(10px);
-  /* filter: blur(20px); */
-  z-index: -1;
+.brick-bg {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
 
-.container {
-  backdrop-filter: blur(10px);
+.brick-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/Lego-Background.webp');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: -1;
+  opacity: 0.8;
 }
 
 a:hover {
@@ -62,7 +68,7 @@ nav a {
   transition: .5s;
 }
 
-.nav-links {
+.nav {
   display: flex;
   align-items: center;
   text-align: center;
@@ -70,7 +76,7 @@ nav a {
   list-style: none;
 }
 
-.nav-links li a {
+.nav li a {
   display: inline-block;
   position: relative;
 }
@@ -79,7 +85,7 @@ nav li a:hover {
   transform: scale(1.2);
 }
 
-nav li a:after {    
+nav li a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -92,9 +98,9 @@ nav li a:after {
   width: 0;
 }
 
-nav li a:hover:after { 
-  width: 100%; 
-  left: 0; 
+nav li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 /* ------------------------------------- */
@@ -109,10 +115,12 @@ header {
 }
 
 .container {
-  max-width: 1100px;
+  /* max-width: 1100px; */
+  max-width: 70%;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 
 header .container {
   display: flex;
@@ -272,7 +280,7 @@ header .container {
 /* Mobile */
 /* ------------------------------------- */
 
-@media (width <= 900px) {
+@media (width <=900px) {
   .hero .container {
     grid-template-columns: 1fr;
   }
