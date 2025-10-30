@@ -8,6 +8,12 @@
   scroll-behavior: smooth;
 }
 
+.brick-bg {
+  background-image: url('../images/Lego-Background.webp');
+  background-size: cover;
+  padding: 56px 0
+}
+
 a:hover {
   cursor: pointer;
 }
@@ -32,6 +38,7 @@ nav {
 nav img {
   width: 15%;
   cursor: pointer;
+  background-color: lightgray;
 }
 
 nav ul {
@@ -47,7 +54,15 @@ nav a {
   transition: .5s;
 }
 
-nav li a {
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
   display: inline-block;
   position: relative;
 }
@@ -98,6 +113,23 @@ header .container {
   gap: 20px
 }
 
+.button {
+  border: none;
+  background-color: #0099FF;
+  color: white;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #007ACC;
+}
+
 .logo img {
   height: 40px;
   display: block
@@ -123,14 +155,16 @@ nav a {
   display: flex;
   flex-direction: row;
   gap: 36px;
-  align-items: center
 }
 
 .hero h1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-family: 'Bowlby One SC';
   font-size: 48px;
   letter-spacing: 6px;
   margin-bottom: 12px;
-  color: #333;
+  color: white;
 }
 
 .hero p {
@@ -139,7 +173,7 @@ nav a {
 }
 
 .hero-media img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08)
@@ -173,11 +207,26 @@ nav a {
   grid-auto-flow: dense
 }
 
-.col .image-col img {
+.col {
   width: 100%;
   height: auto;
   border-radius: 6px;
   display: block
+}
+
+.image-goal img {
+  height: 250px;
+  width: 300px;
+}
+
+.image-innovatie img {
+  height: 250px;
+  width: 300px;
+}
+
+.image-product img {
+  height: 250px;
+  width: 300px;
 }
 
 .card {
@@ -221,7 +270,7 @@ footer .container {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 footer ul {
