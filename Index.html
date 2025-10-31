@@ -21,7 +21,9 @@
 
   <nav id="navbar">
 
-    <img src="./images/banner_sans.svg" alt="LEGOS logo" class="logo" onclick="scrollToTop()" />
+    <button type="button" class="logo-button" aria-label="Scroll to top" onclick="scrollToTop()">
+      <img src="./images/banner_sans.svg" alt="LEGOS logo" class="logo" />
+    </button>
 
         <ul>
           <li><a href="#goal">Ons doel</a></li>
@@ -113,7 +115,7 @@
       <div id="innovation" class="container">
         <h2 class="section-title">Innovatie</h2>
         <div class="two-col reverse">
-          <article class="col card">
+          <article class="col card" aria-label="Innovation article">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.</p>
           </article>
@@ -132,7 +134,7 @@
           <div class="col image-product">
             <img src="./images/product.png" alt="product placeholder" />
           </div>
-          <article class="col text-col card">
+          <article class="col text-col card" aria-label="Product article">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.</p>
           </article>
@@ -169,9 +171,9 @@
           <h3>Secties</h3>
           <ul>
             <li><a href="#goal">Goal</a></li>
-            <li><a href="#innovatie">Innovatie</a></li>
+            <li><a href="#innovation">Innovatie</a></li>
             <li><a href="#product">Product</a></li>
-            <li><a href="#functionaliteit">Functionaliteit</a></li>
+            <li><a href="#functionality">Functionaliteit</a></li>
           </ul>
         </div>
         <div>
@@ -190,7 +192,7 @@
     </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <!-- <script src="./script.js"></script> -->
 </body>
 
 </html>
