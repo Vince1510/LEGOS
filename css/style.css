@@ -58,6 +58,8 @@ nav {
 }
 
 nav img {
+  position: relative;
+  min-width: 200px;
   width: 30%;
 }
 
@@ -299,7 +301,7 @@ header .container {
 /* Mobile */
 /* ------------------------------------- */
 
-@media (width <=900px) {
+@media (600px <= width <= 900px) {
 
   .hero .container {
     grid-template-columns: 1fr;
