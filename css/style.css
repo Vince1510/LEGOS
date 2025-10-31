@@ -171,11 +171,11 @@ header .container {
 .hero h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  font-family: 'Bowlby One SC';
+  /* font-family: 'Bowlby One SC'; */
   font-size: 48px;
   letter-spacing: 6px;
   margin-bottom: 12px;
-  color: white;
+  /* color: white; */
 }
 
 .hero p {
