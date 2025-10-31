@@ -9,9 +9,9 @@ const functionality = [
     }, 
     {
         title: "Stap 3",
-        content: "De kleur lees machine, scand het lego blokje",
+        content: "De kleur lees machine, scant het lego blokje door licht terug te kaatsen naar de sensor",
     },
-        {
+    {
         title: "Stap 4",
         content: "Hier is de stap 2 content",
     },
