@@ -1,7 +1,8 @@
 footer {
-  background: #9f9f9f;
+  /* background: #9f9f9f; */
   padding: 36px 50px;
-  margin-top: 40px
+  margin-top: 40px;
+  box-shadow: var(--box-shadow-inverted);
 }
 
 footer .container {

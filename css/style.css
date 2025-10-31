@@ -3,6 +3,7 @@
 
 :root {
   --box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
+  --box-shadow-inverted: 0px -6px 16px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -24,6 +25,7 @@
   position: absolute;
   inset: 0;
   background-image: url('../images/Lego-Background.webp');
+  transform: scale(2.2);
   background-size: cover;
   background-position: center;
   filter: blur(2px);
