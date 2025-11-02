@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/brick.css" />
   <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/drawer.css" />
 
   <!-- SCRIPTS -->
   <script src="./js/script.js" type="module"></script>
@@ -23,14 +24,18 @@
 
     <img src="./images/banner_sans.svg" alt="LEGOS logo" class="logo" onclick="scrollToTop()" />
 
-        <ul>
+        <ul class="nav-links">
           <li><a href="#goal">Ons doel</a></li>
           <li><a href="#innovation">Innovatie</a></li>
           <li><a href="#product">Product</a></li>
           <li><a href="#functionality">Functionaliteit</a></li>
           <li><a href="#footer">Contact</a></li>
         </ul>
-        
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
 
   <!-- Header -->
@@ -190,7 +195,8 @@
     </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="./js/drawer.js"></script>
+
 </body>
 
 </html>
