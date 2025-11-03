@@ -3,9 +3,6 @@ footer {
   padding: 36px 50px;
   margin-top: 40px;
   box-shadow: var(--box-shadow-inverted);
-}
-
-footer .container {
   display: flex;
   gap: 20px;
   align-items: flex-start;
@@ -65,4 +62,25 @@ footer ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+@media (width <= 600px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #links-logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #socials-copyright {
+    min-height: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
