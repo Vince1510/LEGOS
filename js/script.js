@@ -22,7 +22,7 @@ function addFunctionalities(targetElement) {
         // Adding the content for the card
         div.innerHTML = `
             <img src="" alt="" />
-            <h4>${functionality[i].title}</h4>
+            <h3>${functionality[i].title}</h3>
             <p>${functionality[i].content}</p>
         `;
 
