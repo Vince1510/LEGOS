@@ -219,7 +219,7 @@ header .container {
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 45px;
   align-items: center
 }
 
@@ -239,9 +239,16 @@ header .container {
   width: 300px;
 }
 
-.image-innovatie img {
-  height: 250px;
-  width: 300px;
+#innovation {
+  text-align: justify;
+}
+
+.image-innovatie {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: relative; 
+  min-height: 250px;
 }
 
 .image-product img {

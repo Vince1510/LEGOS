@@ -82,12 +82,11 @@
 .lego {
     width: 150px;
     height: 150px;
-    position: fixed;
-    left: calc(50vw - 75px);
-    top: calc(50vh - 100px);
-    /* Could be used to speed it, perhaps other proportions. */
+    position: absolute;
+    transform: translate(-50%, -50%);
     animation: loading 2.5s infinite ease;
     opacity: 0;
+    z-index: -1;
 }
 
 .lego>.left {
@@ -224,3 +223,13 @@
 		 opacity: 0;
 	}
 } */
+
+
+@media (600px <= width <= 900px) {
+    .lego {
+        width: 120px;
+        height: 120px;
+        opacity: 0.8;
+        z-index: -1;
+    }
+}

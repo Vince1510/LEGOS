@@ -13,7 +13,15 @@ const functionality = [
     },
     {
         title: "Stap 4",
-        content: "Hier is de stap 2 content",
+        content: "De sensor leest de kleur en stuurt deze informatie naar de servos.",
+    },
+     {
+        title: "Stap 5",
+        content: "De servos ontvangen de kleurinformatie en passen hun positie aan. Om zo het lego blokje in de juiste bak te laten vallen.",
+    },
+     {
+        title: "Stap 6",
+        content: "Het proces wordt herhaald voor elk lego blokje dat op de lopende band komt.",
     },
 ]
 
